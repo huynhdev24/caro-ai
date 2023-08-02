@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rowdies', cursive;
+    position: relative;
+}
+
+:root {
+    --SIZE: 100px;
+    --FONT: 4rem;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #03c988;
+    padding: 30px 10px;
+    font-size: 2.5rem;
+    color: #00337c;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: #ff0032;
+    line-height: 2;
+    margin-top: 20px;
+    background-color: #1a120b;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+#table {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(var(--SIZE) * 3);
+}
+
+#table .sq {
+    width: var(--SIZE);
+    height: var(--SIZE);
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--FONT);
+    font-weight: 100;
+    color: blue;
+    cursor: pointer;
+}
+
+#table .sq:hover {
+    background-color: #ececec;
+}
+
+#mess {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#btn {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #3a72e4;
+    color: #fff;
+}
